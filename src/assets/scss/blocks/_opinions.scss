@@ -1,0 +1,127 @@
+.opinions {
+     padding: 90px 0;
+     position: relative;
+     overflow: hidden;
+
+     &-desc {
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: center;
+          margin-top: 10px;
+          color: #6e6e6e;
+          max-width: 382px;
+          margin: auto;
+          // margin-bottom: 40px;
+     }
+
+     &-item {
+          padding: 20px;
+          width: 288px;
+          background: #ffffff;
+          box-shadow: 0px 4px 32px rgba(0, 134, 255, 0.2);
+          border-radius: 20px;
+          margin: 0 15px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #343434;
+               margin-bottom: 12px;
+               display: -webkit-box;
+               -webkit-box-orient: vertical;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               word-break: break-word;
+               width: 100%;
+               -webkit-line-clamp: 6;
+          }
+          .user {
+               display: flex;
+               align-items: center;
+               &-img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    img {
+                         height: 100%;
+                         width: 50px;
+                         // object-fit: cover;
+                    }
+               }
+               &-info {
+                    display: flex;
+                    flex-direction: column;
+                    span:first-child {
+                         font-family: Poppins;
+                         font-size: 16px;
+                         font-style: normal;
+                         font-weight: 600;
+                         line-height: 24px;
+                         letter-spacing: 0em;
+                         text-align: left;
+                         color: #343434;
+                         display: -webkit-box;
+                         -webkit-box-orient: vertical;
+                         text-overflow: ellipsis;
+                         overflow: hidden;
+                         word-break: break-word;
+                         width: 100%;
+                         -webkit-line-clamp: 1;
+                    }
+                    span:last-child {
+                         font-family: Poppins;
+                         font-size: 12px;
+                         font-style: normal;
+                         font-weight: 500;
+                         line-height: 18px;
+                         letter-spacing: 0em;
+                         text-align: left;
+                         color: #5a5a5a;
+                    }
+               }
+          }
+     }
+
+     .marquee-container {
+          padding: 40px 0;
+          &:last-child {
+               transform: translateY(-40px);
+          }
+     }
+
+     .cycle-1 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1200px;
+          height: 1200px;
+          transform: translate(50%, -50%);
+          background: radial-gradient(50% 50% at 50% 50%, rgba(189, 0, 255, 0.2) 0%, rgba(189, 0, 255, 0) 100%);
+          z-index: -1;
+     }
+
+     .cycle-2 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 1200px;
+          height: 1200px;
+          transform: translate(-50%, 50%);
+          background: radial-gradient(50% 50% at 50% 50%, rgba(0, 134, 255, 0.25) 0%, rgba(0, 134, 255, 0) 100%);
+          z-index: -1;
+     }
+}

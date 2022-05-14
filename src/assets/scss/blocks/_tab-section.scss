@@ -1,0 +1,75 @@
+
+
+.tab-section {
+     position: relative;
+     h1.title {
+          text-align: left;
+          max-width: 314px;
+     }
+     section {
+          .main {
+               margin-left: 423px;
+          }
+     }
+
+     .tabs {
+          position: absolute;
+          top: 80px;
+          width: 100%;
+          height: calc(100% - 80px);
+          .tabs-wrapper {
+               position: sticky;
+               top: 100px;
+               z-index: 1;
+               margin-bottom: 400px;
+               .tabs-menu {
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px 0;
+                    width: fit-content;
+                    li {
+                         display: flex;
+                         align-items: center;
+                         font-family: Poppins;
+                         font-size: 21px;
+                         font-style: normal;
+                         font-weight: 600;
+                         line-height: 32px;
+                         letter-spacing: 0em;
+                         text-align: left;
+                         color: #494949;
+                         cursor: pointer;
+                         transition: all 0.15s ease;
+                         .icon {
+                              margin-right: 15px;
+                              height: 32px;
+                              width: 32px;
+                              color: inherit;
+                         }
+                         &.active {
+                              color: #0086ff;
+                         }
+                    }
+               }
+          }
+     }
+     .arrow-right-icon {
+          animation: arrow-right-anim 1.5s ease-in-out infinite;
+     }
+
+     @keyframes arrow-right-anim {
+          0% {
+               -webkit-transform: translate(0, 0);
+               transform: translate(0, 0);
+          }
+          50% {
+               -webkit-transform: translate(5px, 0px);
+               transform: translate(5px, 0);
+          }
+          100% {
+               -webkit-transform: translate(0, 0);
+               transform: translate(0, 0);
+          }
+     }
+}

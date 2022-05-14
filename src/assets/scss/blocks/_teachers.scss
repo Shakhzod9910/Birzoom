@@ -1,0 +1,56 @@
+.teachers {
+     padding: 90px 0;
+     position: relative;
+     overflow: hidden;
+     .main {
+          display: flex;
+          flex-direction: column;
+          &-image {
+               max-width: 605px;
+               width: 100%;
+               margin-top: 30px;
+               margin-bottom: 40px;
+          }
+          &-text {
+               font-family: Poppins;
+               font-size: 21px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 32px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #343434;
+               margin-bottom: 10px;
+          }
+          &-desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #6f6f6f;
+               max-width: 302px;
+               margin-bottom: 20px;
+          }
+          &-icons {
+               display: flex;
+               gap: 0 15px;
+               .icon {
+                    height: 50px;
+                    width: 50px;
+                    color: #ebc500;
+               }
+          }
+     }
+     .cycle {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 900px;
+          width: 900px;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(0, 134, 255, 0.2) 0%, rgba(0, 134, 255, 0) 100%);
+          transform: translate(-50%, 50%);
+     }
+}

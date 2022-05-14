@@ -1,0 +1,95 @@
+.results {
+     padding-top: 50px;
+     .main {
+          .feature-boxes {
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               gap: 0 30px;
+               margin-top: 30px;
+               width: 100%;
+               margin-bottom: 90px;
+               &-box {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px;
+                    border: 1px solid #9ed1ff;
+                    border-radius: 20px;
+                    .head-box {
+                         display: flex;
+                         align-items: center;
+                         .icon-wrapper {
+                              position: relative;
+                              margin-right: 20px;
+                              .icon:first-child {
+                                   height: 80px;
+                                   width: 80px;
+                                   color: #cde7ff;
+                              }
+                              .icon:last-child {
+                                   position: absolute;
+                                   left: 50%;
+                                   top: 50%;
+                                   transform: translate(-50%, -50%);
+                                   color: #0086ff;
+                              }
+                         }
+                         .head-title {
+                              font-family: Poppins;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-weight: 600;
+                              line-height: 32px;
+                              letter-spacing: 0em;
+                              text-align: left;
+                         }
+                    }
+                    .desc {
+                         font-family: Poppins;
+                         font-size: 16px;
+                         font-style: normal;
+                         font-weight: 500;
+                         line-height: 27px;
+                         letter-spacing: 0em;
+                         text-align: left;
+                         color: #9c9c9c;
+                         margin-top: 10px;
+                    }
+               }
+          }
+
+          .results {
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               justify-content: center;
+               &-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    span {
+                         &:first-child {
+                              font-family: Poppins;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-weight: 600;
+                              line-height: 32px;
+                              letter-spacing: 0em;
+                              text-align: left;
+                              color: #65615e;
+                              margin-bottom: 10px;
+                         }
+                         &:last-child {
+                              font-family: Poppins;
+                              font-size: 36px;
+                              font-style: normal;
+                              font-weight: 600;
+                              line-height: 54px;
+                              letter-spacing: 0em;
+                              text-align: left;
+                              color: #0061ff;
+                         }
+                    }
+               }
+          }
+     }
+}

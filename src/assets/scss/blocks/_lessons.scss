@@ -1,0 +1,61 @@
+.lessons {
+     padding: 90px 0;
+     position: relative;
+     overflow: hidden;
+     .main {
+          position: relative;
+          &-image-wrapper {
+               margin-top: 40px;
+               margin-bottom: 40px;
+               max-width: 605px;
+               width: 100%;
+               position: relative;
+               img {
+                    width: 100%;
+               }
+          }
+          &-text {
+               font-family: Poppins;
+               font-size: 21px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 32px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #343434;
+               margin-bottom: 10px;
+          }
+          &-desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #6f6f6f;
+               max-width: 381px;
+          }
+          .overflow-icons {
+               .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #494949;
+                    transform: translate(320px, -10px) rotate(30deg);
+                    height: 44px;
+                    width: 44px;
+                    color: #0086ff;
+               }
+          }
+     }
+     .cycle {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 800px;
+          width: 800px;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(255, 184, 0, 0.2) 0%, rgba(255, 184, 0, 0) 100%);
+          transform: translate(-50%, 50%);
+     }
+}

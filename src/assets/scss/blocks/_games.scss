@@ -1,0 +1,70 @@
+.games {
+     padding: 90px 0;
+     position: relative;
+     overflow: hidden;
+     .main {
+          position: relative;
+          &-image-wrapper {
+               margin-top: 40px;
+               margin-bottom: 40px;
+               max-width: 712px;
+               width: 100%;
+               position: relative;
+               img {
+                    width: 100%;
+                    margin-bottom: 6px;
+               }
+               .child-images {
+                    display: flex;
+                    gap: 12px;
+                    img {
+                         max-width: 212px;
+                         width: calc(33% - 24px);
+                    }
+               }
+          }
+          &-text {
+               font-family: Poppins;
+               font-size: 21px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 32px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #343434;
+               margin-bottom: 10px;
+          }
+          &-desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #6f6f6f;
+               max-width: 381px;
+          }
+          .overflow-icons {
+               .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #494949;
+                    transform: translate(340px, -10px);
+                    height: 44px;
+                    width: 44px;
+                    color: #0086ff;
+               }
+          }
+     }
+     .cycle {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 1000px;
+          width: 1000px;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(0, 188, 150, 0.2) 0%, rgba(0, 188, 150, 0) 100%);
+          transform: translate(-50%, 50%);
+     }
+}

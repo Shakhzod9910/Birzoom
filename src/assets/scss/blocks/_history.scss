@@ -1,0 +1,91 @@
+.history {
+     padding-top: 50px;
+     padding-bottom: 90px;
+     .main {
+          .title-desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: center;
+               color: #343434;
+               max-width: 555px;
+               margin: auto;
+               margin-top: 10px;
+               margin-bottom: 40px;
+          }
+          .history-grid {
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+               max-width: 1030px;
+               margin: auto;
+               &-item {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 0 30px;
+                    .item-banner {
+                         display: flex;
+                         justify-content: flex-end;
+                         img {
+                              max-width: 500px;
+                              width: 100%;
+                         }
+                    }
+                    .item-info {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: flex-end;
+                         .content {
+                              max-width: 422px;
+                              width: 100%;
+                              .date {
+                                   font-family: Poppins;
+                                   font-size: 36px;
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   line-height: 54px;
+                                   letter-spacing: 0em;
+                                   text-align: left;
+                                   color: #343434;
+                                   span {
+                                        color: inherit;
+                                   }
+                                   .slash {
+                                        font-size: 21px;
+                                   }
+                                   .year {
+                                        font-size: 21px;
+                                        color: #595959;
+                                   }
+                              }
+                              .desc {
+                                   font-family: Poppins;
+                                   font-size: 16px;
+                                   font-style: normal;
+                                   font-weight: 500;
+                                   line-height: 26px;
+                                   letter-spacing: 0em;
+                                   text-align: left;
+                                   color: #343434;
+                              }
+                         }
+                    }
+                    &.reverse {
+                         grid-auto-flow: dense;
+                         .item-banner {
+                              grid-column: 2;
+                              justify-content: flex-start;
+                         }
+                         .item-info {
+                              grid-column: 1;
+                              align-items: flex-start;
+                         }
+                    }
+               }
+          }
+     }
+}

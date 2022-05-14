@@ -1,0 +1,66 @@
+.video-lessons {
+     background-color: #000;
+     padding: 90px 0;
+     position: relative;
+     overflow: hidden;
+     .main {
+          position: relative;
+          &-image-wrapper {
+               margin-top: 30px;
+               margin-bottom: 40px;
+               max-width: 712px;
+               width: 100%;
+               position: relative;
+               img {
+                    width: 100%;
+               }
+          }
+          &-text {
+               font-family: Poppins;
+               font-size: 21px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 32px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #ffffff;
+               margin-bottom: 10px;
+          }
+          &-desc {
+               font-family: Poppins;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #6f6f6f;
+               max-width: 418px;
+          }
+          .overflow-icons {
+               .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #494949;
+                    &:first-child {
+                         transform: translate(calc(-100% - 28px), 40px) rotate(15deg);
+                    }
+                    &:last-child {
+                         transform: translate(300px, -25px);
+                         height: 44px;
+                         width: 44px;
+                    }
+               }
+          }
+     }
+     .cycle {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          transform: translate(50%, 50%);
+          height: 1200px;
+          width: 1200px;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(0, 75, 255, 0.3) 0%, rgba(63, 102, 194, 0) 100%);
+     }
+}
